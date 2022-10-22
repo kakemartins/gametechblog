@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Exercício</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .carousel {
+            background-color: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a id="home" class="navbar-brand" href="#"><h1>GameTechBlog</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Notícias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2 id="destaques" class="h4">Destaques</h2>
+        <div id="carousel" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/resident-evil-4-remake-768x432.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Resident Evil 4 Remake é oficial e chega em 2023</h5>
+                        <p>Revelado na State of Play desta quinta-feira (2), Resident Evil 4 Remake já tem trailer e data de lançamento marcada</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/god-of-war-2018-004.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A cronologia de God of War; entenda a ordem dos jogos</h5>
+                        <p>A cronologia de God of War não é linear em relação aos lançamentos dos jogos. Confira as conexões entre as histórias de todos os jogos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/switch-oled-lucro-d.jpeg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nintendo Switch OLED chega oficialmente ao Brasil</h5>
+                        <p>Modelo mais recente do console híbrido da Nintendo traz novidades bem-vindas no modo portátil</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="row">
+            <h2 id="noticias" class="h4">Últimas notícias</h2>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/the-sims-4.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>The Sims 4 já está disponível de graça; veja como adquirir</h5>
+                        </div>
+                        <p class="card-text">EA revelou em setembro que jogo se tornaria free-to-play; mas ainda será necessário abrir a carteira para comprar DLCs</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/resident-evil-4-remake-768x432.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Resident Evil 4 Remake é oficial e chega em 2023 para PS5, Xbox Series e PC</h5>
+                        </div>
+                        <p class="card-text">Revelado na State of Play desta quinta-feira (2), Resident Evil 4 Remake já tem trailer e data de lançamento marcada</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/valquirias-god-of-war-768x432.webp" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Como encontrar e derrotar as Valquírias em God of War</h5>
+                        </div>
+                        <p class="card-text">Descubra a localização de cada uma das nove valquírias em God of War e se prepare para batalhas desafiadoras ao lado de Kratos</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/god-of-war-2018-004.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>A cronologia de God of War; entenda a ordem dos jogos</h5>
+                        </div>
+                        <p class="card-text">A cronologia de God of War não é linear em relação aos lançamentos dos jogos. Confira as conexões entre as histórias de todos os jogos</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/como-encontrar-os-carros-abandonados-de-forza-horizon-5-capa.webp" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Como encontrar os carros abandonados de Forza Horizon 5</h5>
+                        </div>
+                        <p class="card-text">Clássicos ocultos no México; saiba como encontrar os carros abandonados de Forza Horizon 5 e divirta-se com as lendas</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/switch-oled-lucro.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Nintendo Switch OLED chega oficialmente ao Brasil em setembro</h5>
+                        </div>
+                        <p class="card-text">Modelo mais recente do console híbrido da Nintendo traz novidades bem-vindas no modo portátil</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/google-stadia-controle-768x432.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Google Stadia será encerrado em janeiro de 2023</h5>
+                        </div>
+                        <p class="card-text">Anúncio ocorreu na quinta-feira (29) em uma postagem na rede; quem adquiriu jogos ou acessórios receberá o dinheiro de volta</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="images/ps5_capa-1_tb-768x432.webp" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Sony lança novo PS5 com AMD de 6 nm para consumir menos</h5>
+                        </div>
+                        <p class="card-text">Revisão do PlayStation 5 traz chip AMD Oberon Plus de 6 nanômetros; novidade reduz demanda por energia e esquenta menos</p>
+                        <button class="btn btn-dark w-100" type="button">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
